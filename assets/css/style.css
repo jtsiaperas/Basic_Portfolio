@@ -7,12 +7,14 @@ body {
 header {
 	background-color: #ffffff;
 	border: 1px solid #cccccc;
-	width: 960px;
+	float: top;
 	height: 60px;
+}
+#top_bar {
+	width: 960px;
 	margin-left: auto;
 	margin-right: auto;
 }
-
 #menu li {
 	display: inline-block;
 	float: right;
@@ -28,9 +30,9 @@ header {
 .container {
 	width: 960px;
 	margin-top: 20px;
-	margin-bottom: 200px;
 	margin-left: auto;
 	margin-right: auto;
+	
 }
 
 #about_me {
@@ -46,8 +48,7 @@ header {
 }
 
 #about_me p{
-
-	float: none;
+	display: inline-flex;
 }
 #connect {
 	background-color: #ffffff;
@@ -61,9 +62,21 @@ footer {
 	height: 60px;
 	width: 100%;
 	background-color: #666666;
+
 }
 
 footer p {
 	line-height: 60px;
 	text-align: center;
+	border-top: 10px solid teal;
+}
+
+.clearfix::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.clearfix {
+	overflow: auto;
 }
