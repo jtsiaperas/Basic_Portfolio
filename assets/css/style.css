@@ -4,7 +4,6 @@
 
 }
 
-
 body {
 	background-image: url("../images/sakura.png");
 	color: #777777;
@@ -126,7 +125,7 @@ header {
 
 #connect img{
 
-	width: 85px;
+	width: 84px;
 	padding: 10px 15px 10px 0px;
 }
 
@@ -154,7 +153,8 @@ footer p {
 }
 
 .clearfix::after {
-	content: "";
+	content: '---';
+    color: transparent;
 	display: block;
 	clear: both;
 }
